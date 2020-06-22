@@ -8,15 +8,21 @@ $hijau = "\e[92m";
 $merah = "\e[91m";
 echo "$cyan + //////////////////////////////+\n";
 echo "$cyan ___           _     _
-|_ _|_ __  ___(_) __| | ___
- | || '_ \/ __| |/ _` |/ _ \
- | || | | \__ \ | (_| |  __/
-|___|_| |_|___/_|\__,_|\___|\n";
+
+____  ___  __  __   __  ________  
+
+|  | /  | |  | | \  | | |   ___|
+|  |/  /  |  | |  \ | | |   ___
+|  |\  \  |  | |   \| | | (  ) |
+|  | \  | |  | |  |   | | (  ) |
+
+____  ___  __   __ ____  ______\n";
 echo "_   _                 _
-| | | | ___  __ _ _ __| |_ ____
-| |_| |/ _ \/ _` | '__| __|_  /
-|  _  |  __/ (_| | |  | |_ / /
-|_| |_|\___|\__,_|_|   \__/___|\n\n";
+| \   /|
+| |  | |
+| |  | |
+|/    \|
+\n\n";
 echo "+ //////////////////////////////+\n";
 echo " FACEBOOK ACCOUNT CHECKER 2019 \n";
 echo "+ //////////////////////////////+\n";
@@ -25,7 +31,7 @@ echo "+ //////////////////////////////+\n";
 if(isset($argv[1])) {
     if(file_exists($argv[1])) {
         $cokot = explode(PHP_EOL, file_get_contents($argv[1]));
-        foreach($cokot as $iyeukorbannaatawalistna) {
+        foreach($cokot as $iyeukorbannatawalistna) {
             $potong = explode("|", $iyeukorbannaatawalistna);
             nyobianAkun($potong[0], $potong[1]);
           
